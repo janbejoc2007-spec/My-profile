@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLBB Hall of Fame</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* Animated Background */
+body::before{
+    content:'';
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at 20% 20%, #ffd70022, transparent 25%),
+    radial-gradient(circle at 80% 40%, #00ffff22, transparent 25%),
+    radial-gradient(circle at 50% 90%, #ff00ff22, transparent 30%);
+    animation:moveBg 10s infinite alternate;
+}
+
+@keyframes moveBg{
+    from{transform:scale(1);}
+    to{transform:scale(1.1);}
+}
+
+header{
+    text-align:center;
+    padding:80px 20px 40px;
+    position:relative;
+    z-index:1;
+}
+
+header h1{
+    font-size:4rem;
+    color:#FFD700;
+    text-shadow:0 0 20px gold;
+}
+
+header p{
+    font-size:1.2rem;
+    color:#ddd;
+}
+
+.rank{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 35px;
+    border:2px solid gold;
+    border-radius:50px;
+    color:gold;
+    font-weight:bold;
+    box-shadow:0 0 20px gold;
+}
+
+/* Stats */
+
+.stats{
+    max-width:1100px;
+    margin:30px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    position:relative;
+    z-index:1;
+}
+
+.stat-box{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:20px;
+    text-align:center;
+    padding:25px;
+    transition:.4s;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #FFD700;
+}
+
+.stat-box h3{
+    font-size:2.5rem;
+    color:#FFD700;
+}
+
+/* Achievement Cards */
+
+.achievements{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    position:relative;
+    z-index:1;
+}
+
+.card{
+    background:rgba(255,255,255,.07);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 0 30px #FFD700;
+}
+
+.icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.card h2{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#ddd;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#999;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>MY OVER ALL ACHIEVEMENTS</h1>
+    <p>WALANG KUKURAP</p>
+
+    <div class="rank">
+        👑 MYTHICAL IMMORTAL
+    </div>
+</header>
+
+<section class="stats">
+
+    <div class="stat-box">
+        <h3>10,000+</h3>
+        <p>Solo Kills</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>MCL</h3>
+        <p>Champion</p>
+    </div>
+
+    <div class="stat-box">
+        <h3>TOP</h3>
+        <p>Fanny User</p>
+    </div>
+
+    
+
+</section>
+
+<section class="achievements">
+
+    <div class="card">
+        <div class="icon">👑</div>
+        <h2>Mythical Immortal</h2>
+        <p>Reached the highest rank in Mobile Legends.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🏆</div>
+        <h2>MCL Champion</h2>
+        <p>Conquered the MLBB Championship League.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🪽</div>
+        <h2>Outstanding Fanny User</h2>
+        <p>Master of cables and aerial domination.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">⚔️</div>
+        <h2>Superb Core</h2>
+        <p>Carried countless matches to victory.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">💎</div>
+        <h2>Clutch Steal</h2>
+        <p>Specialist in stealing buffs, Turtle, and Lord.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🐢</div>
+        <h2>Turtle Slayer</h2>
+        <p>Secured numerous Turtle objectives.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">👹</div>
+        <h2>Lord Slayer</h2>
+        <p>Dominated late-game objectives.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🌿</div>
+        <h2>Jungle Dominator</h2>
+        <p>Ruled the jungle with unmatched efficiency.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🌊</div>
+        <h2>River Dominator</h2>
+        <p>Controlled vision and river objectives.</p>
+    </div>
+
+    <div class="card">
+        <div class="icon">🔥</div>
+        <h2>10,000 Solo Kills</h2>
+        <p>Eliminated enemies one-on-one over 10,000 times.</p>
+    </div>
+
+</section>
+
+<footer>
+    GALING SA MUNDO NG MGA HALIMAW
+</footer>
+
+</body>
+</html>
